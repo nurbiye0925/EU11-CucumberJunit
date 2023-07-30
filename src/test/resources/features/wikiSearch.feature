@@ -1,6 +1,5 @@
 Feature: Wikipedia search functionality and verifications
 
-  #WSF-45234 --> potential jira ticket number
 
   Scenario: Wikipedia Search Functionality Title Verification
     Given User is on Wikipedia home page
@@ -30,11 +29,11 @@ Feature: Wikipedia search functionality and verifications
       | Bob Marley        | Bob Marley        | Bob Marley         |
       | Chuck Norris      | Chuck Norris      | Chuck Norris       |
       | Antony Hopkins    | Antony Hopkins    | Antony Hopkins     |
-    #BREAK UNTIL 11.10AM CST
+
     @scientists
     Examples:
       | searchValue  | expectedTitle | expectedMainHeader |
-      | Marie Curie  |    | Marie Curie        |
+      | Marie Curie  |               | Marie Curie        |
       | Lady Gaga    | Lady Gaga     | Lady Gaga          |
       | Kate Winslet | Kate Winslet  | Kate Winslet       |
 
